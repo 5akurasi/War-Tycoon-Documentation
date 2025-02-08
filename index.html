@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Tycoon Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="SiteIcon.png"image/x-icon">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#how-to-play">Как играть</a>
+        <a href="#building">Строительство и улучшения</a>
+        <a href="#rewards">Достижения</a>
+        <a href="#tips">Советы</a>
+    </nav>
+</header>
+
+<main>
+    <section id="how-to-play">
+        <h2>Как играть в War Tycoon</h2>
+        <p>War Tycoon — это стратегия с элементами строительства и обороны. Вам предстоит создать свою базу, собирать ресурсы, улучшать технику и оборонительные сооружения, чтобы победить врагов и расширить свою империю. Игра требует умения планировать, эффективно использовать ресурсы и защищать свою базу от атак врагов.</p>
+        <button class="section-button" onclick="scrollToSection('building')">Перейти к строительству</button>
+    </section>
+
+    <section id="building">
+        <h2>Строительство и улучшения</h2>
+        <p>Строительство является основой вашего успеха в игре. В начале вы должны построить базу, которая будет служить вам опорой. Вы можете строить различные типы зданий, включая фабрики для производства ресурсов, оборонительные сооружения и улучшения для ваших войск. Каждый объект на базе может быть улучшен для повышения его эффективности.</p>
+        <button class="section-button" onclick="scrollToSection('rewards')">Перейти к достижениям</button>
+    </section>
+
+    <section id="rewards">
+        <h2>Достижения и награды</h2>
+        <p>В игре есть система достижений, которая позволяет игрокам получать бонусы за выполнение различных задач, таких как успешные сражения, постройка уникальных зданий или выполнение миссий. Достижения дают бонусы, которые могут улучшить вашу продуктивность и усилить базу.</p>
+        <button class="section-button" onclick="scrollToSection('tips')">Перейти к советам</button>
+    </section>
+
+    <section id="tips">
+        <h2>Советы</h2>
+        <p>1. Не забывайте о защите. Развивайте оборонительные сооружения, чтобы избежать внезапных атак. <br>
+        2. Постоянно улучшайте свою технику и базы. Это ключ к победе. <br>
+        3. Используйте ресурсы эффективно. В начале игры они ограничены, и вам нужно быть стратегом.</p>
+        <button class="section-button" onclick="scrollToSection('how-to-play')">Вернуться к началу</button>
+    </section>
+</main>
+
+<script>
+    // Функция для плавного скроллинга к разделу с небольшим отступом
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        window.scrollTo({
+            top: section.offsetTop - 30,  // 30px выше, чтобы выделить раздел
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
